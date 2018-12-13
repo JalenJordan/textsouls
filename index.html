@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/style.css">
+     <title>TextSouls Games</title>
+</head>
+<body>
+     <div class="beginning">
+          <div class="container">
+               <div class="row">
+                    <div class="col-sm-12">
+                         <h1 id="he">TEXTSOULS</h1>
+                         <input type="button" id="starter" value="START" class="btn-primary, btn-danger, btn-lg" onclick="start()">
+                    </div>
+               </div>
+          </div>
+     </div>
+     <form id="begingame">
+          <p id="startstatement"></p>
+          <input type="button" class="btn-danger btn-primary, btn-lg" value="begin" id="beginner" onclick="begin()">
+     </form>
+     <form id="firstquestion">
+          <h1>You are in the catacomes choose what direction you want to start</h1>
+          <input type="radio" name="choice"  value="middle" id="middle"><label >Go to Middle</label>
+          <input type="radio" name="choice" id="left"><label>Go Left</label>
+          <input type="radio" name="choice" id="farLeft"><label>Go Far Left</label>
+          <input type="radio" name="choice" id="right"><label>Go Right</label>
+          <input type="radio" name="choice" id="farRight"><label>Go Far Right</label>
+          <br>
+          <input type="button" value="ANSWER" class="btn-danger btn-primary btn-lg" onclick="first()">
+     </form>
+     <form id="leftquestion">
+          <h1>You find yourself in the sights of an Ludwig</h1>
+          <input type="radio" name="choice3" id="run" onclick=goingleft()><label>RUN</label>
+          <input type="radio" name="choice3" id="fight" onclick="goingleft()"><label>FIGHT</label>
+          <input type="radio" name="choice3" id="die" onclick="goingleft()"><label>DIE</label>
+     </form>
+     <form id="farleftquestion">
+          <h1>You wined up in a pit with an abhorrent beast</h1>
+          <input type="radio" name="choice4" id="goback" onclick="goingfarleft()"><label >Go Back</label>
+          <input type="radio" name="choice4" id="fight" onclick="goingfarleft()"><label >Fight</label>
+          <input type="radio" name="choice4" id="run"onclick="goingfarleft()"><label>Run</label>
+     </form>
+     <form id="rightquestion">
+          <h1>Want to continue</h1>
+          <input type="radio" name="choice5" id="yes" onclick="goingright()"><label>YES</label>
+          <input type="radio" name="choice5" id="no" onclick="goingright()"><label>NO</label>
+     </form>
+     <form id="secondquestion">
+          <h1>You see an Elderly Lady weeping. How do you approach this situation</h1>
+          <input type="radio" name="choice2" value="killandloot" id="kill" onclick="middlechoice()"><label>Kill and Loot Her</label>
+          <input type="radio" name="choice2" value="ignore" id="ig" onclick ="middlechoice()"><label>Ignore Her</label>
+          <input type="radio" name="choice2" value="help" id="hp"onclick ="middlechoice()"><label>Help Her</label>
+     </form>
+     <p id="youdied"></p>
+     <!-- <p id="youdie"></p> -->
+     <input type="button" value="Startover" id="startover" class="btn-info, btn-primary, btn-lg" onclick= "begin()">
+</body>
+<script src="java/adventure.js"></script>
+</html>

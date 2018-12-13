@@ -1,0 +1,43 @@
+body{
+     background-image: url(titlepic.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     text-align: center;
+     color: red;
+}
+#startstatement{
+     font-size: 50px;
+     display: none;
+}
+#startover,#farleftquestion,#leftquestion,#secondquestion,#begingame,#firstquestion,#rightquestion{
+     display: none;
+}
+label{
+     font-size: 30px;
+}
+input#middle, input#left, input#farLeft, input#right, input#farRight,input#kill,input#hp,input#ig,input#run,input#fight,input#die,input#goback,input#no,input#yes{
+     height: 30px;
+     width: 30px;
+     margin-left: 15px;
+}
+input#middle,input#left,input#farLeft,input#right,input#farRight,input#hp,input#kill,input#ig,input#run,input#fight,input#die,input#goback,input#no,input#yes{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     border-radius: 50%;
+     width: 30px;
+     height: 30px;
+     border: 2px solid white;
+     transition: 0.2s all linear;
+     outline: none;
+}
+input#middle:checked,input#left:checked,input#farLeft:checked,input#right:checked,input#farRight:checked,input#kill:checked,input#hp:checked,input#ig:checked,input#fight:checked,input#goback:checked,input#run:checked,input#yes:checked,input#no:checked{
+     border: 6px solid red;
+}
+#starter,#beginner{
+     width: 300px;
+}
+#youdied{
+     font-size: 72px;
+     color: white;
+}

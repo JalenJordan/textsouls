@@ -9,18 +9,18 @@ body{
      font-size: 50px;
      display: none;
 }
-#startover,#farleftquestion,#leftquestion,#secondquestion,#begingame,#firstquestion,#rightquestion{
+#startover,#farleftquestion,#leftquestion,#secondquestion,#begingame,#firstquestion,#rightquestion,#farrightquestion{
      display: none;
 }
 label{
      font-size: 30px;
 }
-input#middle, input#left, input#farLeft, input#right, input#farRight,input#kill,input#hp,input#ig,input#run,input#fight,input#die,input#goback,input#no,input#yes{
+input#middle, input#left, input#farLeft, input#right, input#farRight,input#kill,input#hp,input#ig,input#run,input#fight,input#die,input#goback,input#no,input#yes,input#apologise,input#attemptssj{
      height: 30px;
      width: 30px;
      margin-left: 15px;
 }
-input#middle,input#left,input#farLeft,input#right,input#farRight,input#hp,input#kill,input#ig,input#run,input#fight,input#die,input#goback,input#no,input#yes{
+input#middle,input#left,input#farLeft,input#right,input#farRight,input#hp,input#kill,input#ig,input#run,input#fight,input#die,input#goback,input#no,input#yes,input#apologise,input#attemptssj{
      -webkit-appearance: none;
      -moz-appearance: none;
      appearance: none;
@@ -31,7 +31,7 @@ input#middle,input#left,input#farLeft,input#right,input#farRight,input#hp,input#
      transition: 0.2s all linear;
      outline: none;
 }
-input#middle:checked,input#left:checked,input#farLeft:checked,input#right:checked,input#farRight:checked,input#kill:checked,input#hp:checked,input#ig:checked,input#fight:checked,input#goback:checked,input#run:checked,input#yes:checked,input#no:checked{
+input#middle:checked,input#left:checked,input#farLeft:checked,input#right:checked,input#farRight:checked,input#kill:checked,input#hp:checked,input#ig:checked,input#fight:checked,input#goback:checked,input#run:checked,input#yes:checked,input#no:checked,input#attemptssj:checked,input#apologise:checked{
      border: 6px solid red;
 }
 #starter,#beginner{

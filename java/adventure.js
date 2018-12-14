@@ -69,6 +69,14 @@ function first(){
           rightquestion.style.display = "block";
           document.body.style.background = "black"
      }
+     if(type[4].checked){
+          var question = document.getElementById("firstquestion");
+          question.style.display = "none";
+          var farrightquestion = document.getElementById("farrightquestion");
+          farrightquestion.style.display = "block";
+          document.body.style.backgroundImage = "url(css/Farmer.png)";
+     }
+
 }
 function goingleft(){
      var type = document.getElementsByName("choice3");
@@ -121,6 +129,29 @@ function goingright(){
           var rightquestion = document.getElementById("rightquestion");
           rightquestion.style.display = "none";
           begin()
+     }
+}
+function goingfarright(){
+     var type = document.getElementsByName("choice6");
+     if(type[0].checked){
+          var youdied = document.getElementById("youdied");
+          var farrightquestion = document.getElementById("farrightquestion");
+          farrightquestion.style.display = "none";
+          document.body.style.backgroundImage = "url(css/powerup.png)";
+          document.body.style.backgroundSize = "100%";
+          setTimeout(function(){document.body.style.backgroundImage = "url(css/yamcha.png)";
+          }, 1000);
+          setTimeout(function(){
+               alert("ACHIEVEMENT: GOT YAMCHA'D")
+          },2000);
+          youdied.innerHTML = "YOU DIED"
+          var startover = document.getElementById("startover");
+          startover.style.display = "block"
+     }
+     if(type[1].checked){
+          begin();
+          var farrightquestion = document.getElementById("farrightquestion");
+          farrightquestion.style.display = "none";
      }
 }
 function backwards(){
